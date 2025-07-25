@@ -1,7 +1,7 @@
 {
-  "name": "whatsapp-bot",
+  "name": "bizz-bazzar",
   "version": "1.0.0",
-  "description": "WhatsApp Bot for Seller Registration",
+  "description": "Bizz Bazzar - WhatsApp Bot for Seller Registration",
   "main": "final.js",
   "scripts": {
     "start": "node final.js"

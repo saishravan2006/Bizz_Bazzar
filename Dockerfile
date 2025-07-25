@@ -15,11 +15,12 @@ RUN apt-get update && apt-get install -y \
     ca-certificates fonts-liberation libappindicator1 libnss3 \
     lsb-release xdg-utils wget --no-install-recommends
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy package.json and package-lock.json 
+COPY package*.json ./ 
+COPY .npmrc ./ 
 
-# Install app dependencies
-RUN npm install
+# Install app dependencies with suppressed warnings 
+RUN npm install --no-audit --no-fund --silent
 
 # Copy app source
 COPY . .

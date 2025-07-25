@@ -4,8 +4,9 @@
   "description": "Bizz Bazzar - WhatsApp Bot for Seller Registration",
   "main": "final.js",
   "scripts": {
+
     "start": "node final.js",
-    "build": "npm install"
+    "build": "npm install --no-audit --no-fund --silent"
   },
   "engines": {
     "node": ">=18.0.0",
